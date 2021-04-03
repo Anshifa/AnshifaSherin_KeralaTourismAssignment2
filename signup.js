@@ -96,24 +96,65 @@ function getFieldName(input)
     return input.id.charAt(0).toUpperCase() + input.id.slice(1)
 }
 
-var strength = { 0:"Worst", 1:"Bad", 2:"Weak", 3:"Good", 4:"Strong"}
-var passwrd = document.getElementById('password');
-var meter = document.getElementById('password-strength-meter');
-var text = document.getElementById('password-strength-text');
-password.addEventListener('input', function()
+
+
+
+
+function ShowFull(input, message)
 {
-    var val = passwrd.value;
-    var result = zxcvbn(val);
-    meter.value = result.score;
-    if(val !== "")
+    const passControl = input.parentElement;
+    passControl.className = "pass-control full";
+    const small = passControl.querySelector('small');
+    small.innerText = message;
+}
+function ShowHigh(input, message)
+{
+    const passControl = input.parentElement;
+    passControl.className = "pass-control high";
+    const small = passControl.querySelector('small');
+    small.innerText = message;
+}
+function ShowMedium(input, message)
+{
+    const passControl = input.parentElement;
+    passControl.className = "pass-control medium";
+    const small = passControl.querySelector('small');
+    small.innerText = message;
+}
+function ShowLow(input, message)
+{
+    const passControl = input.parentElement;
+    passControl.className = "pass-control low";
+    const small = passControl.querySelector('small');
+    small.innerText = message;
+}
+
+function CheckStrength(input)
+{
+    const full = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    const high = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const medium =/^(?=.*[a-z])(?=.*[A-Z])[A-Za-z]{8,}$/;
+    const low = /^(?=.*[a-z])[a-z]{8,}$/;
+    if(full.test(input.value.trim()))
     {
-        text.innerHTML = "Strength: " + strength[result.score];
+        ShowFull(input, "Perfect Password!!");
     }
-    else
+    else if(high.test(input.value.trim()))
     {
-        text.innerHTML = "";
+        ShowHigh(input, "Good Password!!");
     }
-});
+    else if(medium.test(input.value.trim()))
+    {
+        ShowMedium(input, "Not bad Password");
+    }
+    else if(lowl.test(input.value.trim()))
+    {
+        ShowLow(input, "Worst Password");
+    }
+    
+}
+
+
 
 form.addEventListener('submit', function(e)
 {
@@ -124,5 +165,6 @@ form.addEventListener('submit', function(e)
   CheckLenght(password, 8, 25);
   CheckEmail(email);
   CheckPhone(phone);
+  CheckStrength(password);
   CheckPasswordsMatch(password, password2);
 });
