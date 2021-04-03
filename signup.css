@@ -1,6 +1,10 @@
 :root
 {
   --success-color: #2ecc71;
+  --high-color: orange;
+  --full-color:green;
+  --medium-color: yellow;
+  --low-color:red;
   --error-color: #e74c3c;
 }
 * 
@@ -69,6 +73,7 @@ input:focus
     bottom: 5px;
     visibility: hidden;
 }
+
 button
 {
     cursor: pointer;
@@ -91,6 +96,36 @@ button
 {
     visibility: visible;
 }
+
+.pass-control small
+{
+    font-size: 12px;
+    background: #fff;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    visibility: visible;
+}
+.pass-control.full input
+{
+    color: var(--full-color);
+    border-color:var(--full-color);
+}
+.pass-control.high input
+{
+    color: var(--high-color);
+    border-color:var(--high-color);
+}
+.pass-control.medium input
+{
+    color: var(--medium-color);
+    border-color:var(--medium-color);
+}
+.pass-control.low input
+{
+    color: var(--low-color);
+    border-color:var(--low-color);
+}
 .form-control.error input
 {
   border-color: var(--error-color);
@@ -98,53 +133,4 @@ button
 .form-control.success input
 {
   border-color: var(--success-color);
-}
-
-meter
-{
-    -webkit-appearance: none;
-    -moz-appearnace:none;
-    appearance: none;
-    margin: 0 auto 1em;
-    width: 100%;
-    height: 0.5em;
-    background: none;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-meter::-webkit-meter-bar
-{
-    background: none;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-meter[value="1"]::-webkit-meter-optimum-value
-{
-    background: red;
-}
-meter[value="2"]::-webkit-meter-optimum-value
-{
-    background: orange;
-}
-meter[value="3"]::-webkit-meter-optimum-value
-{
-    background: yellow;
-}
-meter[value="4"]::-webkit-meter-optimum-value
-{
-    background: green;
-}
-meter[value="1"]::-moz-meter-bar
-{
-    background: red;
-}
-meter[value="2"]::-moz-meter-bar
-{
-    background: orange;
-}
-meter[value="3"]::-moz-meter-bar
-{
-    background: yellow;
-}
-meter[value="4"]::-moz-meter-bar
-{
-    background: green;
 }
