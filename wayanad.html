@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <title>
+            Wayanad
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            .img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                WAYANAD
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="wnd1.jpg" class="slide" width="500" height="300" />
+              <img src="wnd2.jpg" class="slide" width="500" height="300" />
+              <img src="wnd3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Wayanad</strong>Wayanad is an Indian district in the north-east of Kerala state with administrative headquarters at the municipality of Kalpetta. It is set high on the Western Ghats with altitudes ranging from 700 to 2100 meters. The district was formed on 1 November 1980 as the 12th district in Kerala by carving out areas from Kozhikode and Kannur districts. About 885.92 sq.km of area of the district is under forest. Wayanad has three municipal towns—Kalpetta, Mananthavady and Sulthan Bathery. There are many indigenous tribals in this area.
+            <br>
+            Tourism Wayanad is an agrarian district located in the north-east region of the Indian state of Kerala, at the southernmost tip of the Deccan Plateau.It is known for its cool climate, misty peaks and green forests. The whole area is totally green with hills and vallies and natural life.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>BANASURA SAGAR DAM</h2>
+                <br>
+                <img class = "img" src="banasura.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    One of the most spellbinding places to visit in Wayanad, Banasura Sagar Dam is a picturesque tourist hotspot. Known for being India’s largest earthen dam, it boasts of extensive natural beauty with beautiful flora and fauna, majestic hills and mesmerising waterfalls. The Banasura Sagar is a photographer’s delight and offers the most beautiful views from the top of the hill. <br>It is also famous among adventure enthusiasts who look forward to thrilling activities like boating, trekking, horse racing and camel rides. For the avid trekkers, Banasura hill peak is hailed as one of the most challenging treks. Along with that Banasura Hill Resort adds to the charm of this place that is known as the only ‘earthen’ resort in the country.                
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>EDEKKAL CAVES</h2>
+                <br>
+                <img class = "img" src="edekkal.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Travel back in time to the Stone Age with a visit to Edakkal Caves that are located on the Ambukuthi Hills. Edakkal literally translates to ‘a stone in between’ and this cave and showcases a natural masterpiece. It is associated with many myths and considered as one of the most sacred places to visit in Wayanad. Edakkal caves are not actually considered to be caves in a scientific sense yet remain a great piece of archaeological curiosity for tourists. These caves are identified as a Neolithic settlement and present the evidence of a pre-historic society of highly civilised people. These caves draw in a number of history buffs and students of archaeology who wish to explore these mysterious caves.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>LAKKIDI WATERFALLS</h2>
+                <br>
+                <img class = "img" src="lakkidi.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    Famous for its mesmerising scenery, Lakkidi View Point is known for its nine hairpin caves and offers a resplendent view of the mountains in Wayanad. The whole trip of Lakkidi View Point promises an unforgettable charm of natural beauty that should add to their bucket list of attractions in Wayanad. Offering a bird’s eye view of the magnificent surroundings, this place leaves you in search of words to describe the panoramic vista that your eyes behold. It is also a famous picnic spot and often known as the ‘Gateway of Wayanad’. Lakkidi is also known for receiving the second highest rainfall in the world and its misty environment makes it an unforgettable tourist place in Wayanad.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MEENMUTTY WATERFALLS</h2>
+                <br>
+                <img class = "img" src="meenmutty.jpg" alt="" width="700" height="400"/>
+                <p>
+                    One of the delightful of Wayanad tourist places, Meenmutty Waterfalls is a three-tiered waterfall that will take your breath away. A scenic trek through the lush green forest from the Wayanad-Ooty Road leads up to this picturesque natural wonder. There are separate decks which can be accessed in different ways to view the different tiers of this spectacular waterfall. The roaring waters of Meenmutty Falls are situated in the lush forests that makes it a delight for photographers. Tourists can exalt in a magnificent view of Banasura Sagar Dam from the peak of the third tier of this waterfall. With thundering visuals of the scenery, Meenmutty Waterfalls is hailed as one of the most thrilling places for adventure lovers in Wayanad. 
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>NEELIMALA VIEW POINT</h2>
+                <br>
+                <img class = "img" src="neelimala.jpg" alt="" width="600" height="400"/>
+                <p>
+                    Promising one of the most enthralling trekking experiences in Wayanad tourist places, Neelimala View Point is a must visit for adventure aficionados. 
+
+                    It presents some amazing trails that cross the most picturesque landscape of Western Ghats. Tourists are in for a charming surprise as Neelimala View Point offers gushing streams and verdant valleys on the way up to the hill.
+                    
+                    This place is a splendid tourist spot where you can appreciate the company of nature with the misty clouds and its pristine ambience. 
+                    
+                    This beauty of this popular trekking and camping site is accentuated by the Meenmutti waterfall that brings out the most wonderful view of the place.
+                </p>
+            </li>
+            <br>
+        </ol>
+    </body>
+</html>

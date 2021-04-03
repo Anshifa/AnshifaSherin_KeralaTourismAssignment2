@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>
+            Kottayam
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            .img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                KOTTAYAM
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="ktm1.jpg" class="slide" width="500" height="300" />
+              <img src="ktm2.jpg" class="slide" width="500" height="300" />
+              <img src="ktm3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Kottayam</strong>Kottayam is a city in the Indian state of Kerala. Kottayam literally means the interior of a fort "Kotta" meaning fort and "Akam" meaning inside. Flanked by the Western Ghats on the east and the Vembanad Lake and paddy fields of Kuttanad on the west, Kottayam is a place that is known for extraordinary qualities. It is the district headquarters of Kottayam district, located in south-west Kerala. Kottayam is located in the basin of the Meenachil River at an average elevation of 3 metres above sea level, and has a moderate climate. It is located 150 kilometres north of the state capital Thiruvananthapuram.     
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>ISLAND OF PATHIRAMANAL</h2>
+                <br>
+                <img class = "img" src="pathiramanal.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    Located in the popular Vembanad Lake, this quaint island is one of the most fascinating islands in Kerala. The journey to reach the striking island is one of the most mesmerizing ones complete with sights of rare birds, swaying coconut palms, and whispering waters.
+
+                    And let’s just not talk about the stimulating allure of the island. Its unspoilt beauty and hidden paths take you through a mystical world that you really crave to see while on a break from the tiring work-home routine. The lush farmlands get converted to thick forests, and thick forests to paddy fields. The varied vegetation on the island is awesome. You could also choose from some of the best resorts near Kottayam if you want a luxurious staycation.                
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>VAIKKOM</h2>
+                <br>
+                <img class = "img" src="vaikkom.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Vaikom is one of the popular places around Kottayam mainly due to its variety of tourist attractions. It is home to some of the most scenic backwaters of Kerala like Kumarakom and houses rich historical places and heritage temples that add an old-world charm to it. Its serenity and simplistic beauty are unbeatable. If you are looking for some ‘me or us’ time, Kottayam is littered with several secluded, yet calming haunts where you can let sit back and simply enjoy the view.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KOTTATHAVALAM</h2>
+                <br>
+                <img class = "img" src="kottathavalam.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    Located about 70 km from Kottayam, Kottathavalam is a popular hill station and a favorite among those looking for a long drive through the mountaineous roads. The terrain has rock cut trails, passing through which you may feel a sense of exhilaration and thrill. Many small and huge temples adorn the pathways. In fact just a little detour takes you to a 1,000 year old temple. Kottathavalam is a perfect mixture of attractions like roads perfect for a long drive, beauty, spirituality and thrill to draw you in. This is one of the top tourist places in Kottayam for one day trip.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MARMALA WATERFALLS</h2>
+                <br>
+                <img class = "img" src="marmala.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Located in Erattupetta near Kottayam, Marmala waterfall is one of the places to visit if you’re looking for some adventure. It’s difficult to reach the waterfalls as only jeeps can traverse the narrow trodden paths.  However, all the hardship is worth the sweat for the adventure-seeking tourists. The difficult journey adds to the overall charm of these mystical falls. The beauty and the calm make up for the dangerous paths, it is also one of the best waterfalls near Kottayam to visit.
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>NATTAKOM AND PANACHIKKAD</h2>
+                <br>
+                <img class = "img" src="nattakom.jpg" alt="" width="600" height="400"/>
+                <p>
+                    Two of the most offbeat places to visit in Kottayam, Nattakom and Panachikkad are the secluded villages located mere few kilometers from main city. These villages are known for their scenic landscapes, migratory birds, and remarkable reservoirs. Some of the best temples in the area are based in these villages. Villages of heritage as well as religious importance, Nattakom and Panachikkad are must visit places near Kotayam. Visit them if you’re looking for a secluded desi getaway in the midst of nature and its warm natives.
+                </p>
+            </li>
+            <br>
+        </ol>
+    </body>
+</html>

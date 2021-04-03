@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title>
+            Malappuram
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .img
+            {
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                MALAPPURAM
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="mlp1.jpg" class="slide" width="500" height="300" />
+              <img src="mlp2.jpg" class="slide" width="500" height="300" />
+              <img src="mlp3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Malappuram</strong>The hilly district of Malappuram falls among the northern districts in the state of Kerala. Closely bordered by the mountain ranges of the Western Ghats on its east, and flanked by the Arabian Sea on the West, Malappuram has an eventful history with the Zamorins of Kozhikode ruling the region for a significant period in the past. The district has also witnessed several local uprisings against the British rule, and was once a prominent center for Hindu-Vedic learning and Islamic philosophy. Historic monuments, natural attractions, ritual art forms, ethnic cuisine and age-old traditions make Malappuram a unique destination for travelers.
+
+            The District Tourism Promotion Council (DTPC) is set up with the purpose of fully exploiting the tourism potential of the State through sustained efforts by co-ordinating various Government departments, voluntary agencies and others interested in travel and tourism.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>ADYANPARA WATERFALLS</h2>
+                <br>
+                <img class="img" src="adyanpara.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    A natural cascading waterfall, the Adyanpara is counted amongst the best of Malappuram tourist places. Located in in the Kurmbalangodu village of Nilambur district near Malappuram, the waterfalls are a seasonal delight.
+
+                    In summers, the water runs dry and with a lesser flow, but are nonetheless similarly beautiful to look at. The waters of the falls descend down in a cascade over the rocks of the hill, with a rich variety of flora around it to make it look even more mesmerizing.
+                    
+                    Location: Malappuram, Kerala 679334.
+                    
+                    Timings: No time.
+                    
+                    Entry Fees: INR 25 per person.
+                    
+                    How to reach from city: The place is easily accessible through the road from Nilambur, which is about 16 km away.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>PADINHAREKARA BEACH</h2>
+                <br>
+                <img class="img" src="padinharekara.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Padinharekara Beach or Padinjarekara Beach is one of the most scenic places to visit in Malappuram for a serene experience. One of the most amazing things to do in Malappuram is to experience a sunset from this beach. <br> Located at the very end of the famous Tipu Sultan Road, you can also get mesmerized with the view of the rivers Bharathapuzha and Tirurpuzha before they merge with the Arabian Sea. You can find palm trees surrounding the white sandy beach, attracting tourists in large numbers. <br> Location: 17 km from Tirur Town, Malappuram, India. <br> Timings: All day <br>Entry Fees: None
+                    <br>How to reach from city: The beach is located about 17 km from the Tirur town of Malappuram. Take the Tipu Sultan Road and the beach is at the very end of it.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MAMBURAM</h2>
+                <br>
+                <img class="img" src="mamburam.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    A famous Muslim Pilgrimage in the Malappuram district, Mamburam is a shrine dedicated to the dead bodies of some of the primary Thangals of Kerala. It was a title given to the Arabs from Yemen who scattered from there and migrated to Kerala. They held great importance to the locals of Kerala and thus, had this shrine dedicated to them. A local festival held here during the time of Muharram is one of the primary attractions of this place. 
+                    <br>
+                    Location: Malappuram, Kerala. 
+                    <br>
+                    Timings: All day <br>Entry Fees: None
+                    <br> How to reach from city: The shrine is located about 26 km from the town of Tirur and can be reached easily via road.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KODIKUTHIMALA</h2>
+                <br>
+                <img class="img" src="kodikuthimala.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Another attraction of Malappuram that is often compared to the famous town of Ooty, Kodikuthimala is definitely a sight for the sore eyes. A hill station of Kerala, the place is perched on a height of about 522 m above sea level, and is the highest point in the Amminikkadan hills. Once the spot where the Britishers once hoisted their flag, the spot was opened for tourism only a few decades ago, with a large area of the place marked already for future development projects. There is a watch tower on the top of the hill from where tourists can get a panoramic view.
+                    <br> Location: Perinthalmanna taluk, Malappuram district, Kerala, India.
+                    <br> Timings: No time. <br> Entry Fees: None
+                    <br>How to reach from city: Take the road that takes you from Perinthalmanna which goes through Amminikkad.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KERALAMKUNDU WATERFALLS</h2>
+                <br>
+                <img class = "img" src="keralamkund.jpg" alt="" width="600" height="400"/>
+                <p>
+                    A basin at the base of waterfalls where people can enjoy a dip in the pond is something everyone wants to have an experience. Keralam Kundu Waterfalls are undoubtedly the best of all Malappuram Tourist Places, and that is why people keep flocking here to have an experience of the mystical. The water flows in from the forest of the western ghat and forms a pool of crystal clear water at the base of the falls. Also, it is believed that the water has many medicinal properties.
+                    <br> Location: Silent Valley National Park, Karuvarakundu 676523, India.
+                    <br>Timings: Everyday 8:30 to 6 PM
+                    <br>Entry Fees: INR 10 per person.
+                    <br>How to reach from city: You can get here by road from Malappuram and Shornur. But be prepared as you will have to walk for a while from the road. 
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

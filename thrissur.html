@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>
+            Thrissur
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            .img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                THRISSUR
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="tsr1.jpg" class="slide" width="500" height="300" />
+              <img src="tsr2.jpg" class="slide" width="500" height="300" />
+              <img src="tsr3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Thrissur</strong>Officially known as the cultural capital of Kerala, Thrissur is famous for fostering classical Keralan performing arts, religious sites and the renowned  Thrissur Pooram festival, Onam festival and Vadakkumnathan Temple.
+
+            Thrissur is the short form of Thiru-Shiva-Per-Ur which literally means “a city with three temples of Lord Shiva”. Thrissur later became anglicised to Trichur. 
+            
+            Thrissur is from where Kerala gets a fair share of its festive glitter. Thrissur was the capital of the Kingdom of Kochi. The festivals celebrated here are the major attraction for tourists and a visit to Thrissur is incomplete without witnessing these. Other tourist spots in Thrissur include the Vadakkumnathan Kshetram Temple, Tomb of Shakthan Thampuran, Archaeology Museum, Athirapally Falls, Heritage Garden and many more.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>CHAVAKKAD BEACH</h2>
+                <br>
+                <img class = "img" src="chavakkad.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    One of the most fascinating and unexplored beaches of the state of Kerala, the Chavakkad Beach is popularly one amongst the most famous Thrissur Tourist places. Perfect for picnickers, honeymooners, and tourists of all sorts, the golden sand of the beach is what at the tracts people from all corners of the country. 
+
+                    The place where the beach is, there is a river that meets the sea, making an estuary. One of the best reasons for people to flock here is the colour of the waters, and the sight of fishermen going about their daily life. One can do a lot here, one of which is witnessing the amazing cleanliness of the area.                </p>
+            </li>
+            <br>
+            <li>
+                <h2>THRISSUR BEACH</h2>
+                <br>
+                <img class = "img" src="thrisuurbeach.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Thrissur Beach is one of its kinds in the entire Kerala region which bears every charm to attract people from all walks of life. Situated on the coastline of Arabian sea, the beach offers alluring views during sunrise and sunsets.Earlier, the beach used to attract only the locals but as the time passed the beauty of the beach won hearts of the tourists even in the distant lands.The Thrissur beach is situated in the city of Thrissur which is also the cultural capital of Kerala. Besides the beach, the place is famous for the ancient temple, churches, and mosques.With people flocking around on the sunkissed golden sand bordered by swaying palm trees and the sound of the waves, the place gets charismatic as the dawn happens.People coming from all around the world to witness the natural beauty of the place indulge themselves into various activities that happen on and around the beach like swimming, surfing, fishing, sunbathing, boat rides and birdwatching on the dreamy stretch of vast blue water.Water resorts situated around provides a panoramic view of the sea along with an opulent stay option.
+                    For those who are looking for spending some quality time with the family, there are ample opportunities for all age groups such as playgrounds, garden, and waterfront parks.A lot of locals treat this place as a picnic spot on weekends.Ayurvedic massage centers offer relaxing massages with locally grown medicinal herbs. As the locals grow herbs in the area, the refreshing smell fills the surroundings and rejuvenate the people visiting the place. One can indulge themselves in various sorts of water sports such as kayaking, Catamaran sailing, scuba diving. One of the most profound experience is the fishing that one can indulge in with the help of local fishermen.
+                    To satisfy the eating urges, the place also provides options for trying out some of the authentic recipes of the south.The costermonger provides lip-smacking food options to try and attracts a lot of tourists as well as the local crowd. Plenty of resorts provide a perfect dining experience to the guests and makes the tourists feel relaxed and relish the Malayali cuisine.So to adore the natural beauty of the sea, the land, and sizzling coastline, one must visit the enchanting Thrissur beach.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>VILANGAN KUNNU</h2>
+                <br>
+                <img class = "img" src="vilangankunnu.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    The oxygen jar of the city of Thrissur, Vilangan Kunnu is a hillock located near the city. From its top, one can get a fine view of the Thrissur city and Thrissur Kole Wetlands, making the place one of the most favourite picnic spots in the region. Simply surreal, the experience from the 5-acre hilltop is only enhanced by the construction of an amusement park, where there are a number of rides that the kids can enjoy with the amazing view below.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>DOLOURS BASILICA</h2>
+                <br>
+                <img class = "img" src="doloursbasilica.jpg" alt="" width="700" height="400"/>
+                <p>
+                    The Dolours Basilica, or the Basilica of Our Lady of Dolours (as the full name goes), is a distinct building in the city of Thrissur. You can easily recognize this grand church from its white facade. Smack in the middle of a lush green valley, this basilica is known for narrating quite a number of stories of love and faith. Spread in an area of about 25,000 sq feet, Dolours Basilica is the third tallest church in Asia and the largest church in the country with double storeyed aisles.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>THRISSUR ZOO AND STATE MUSEUM</h2>
+                <br>
+                <img class = "img" src="thrissurzoo.jpg" alt="" width="600" height="400"/>
+                <p>
+                    Smack in the middle of the city is one of the most alive and beautiful of all Thrissur Tourist Places. Also known as the State Museum & Zoo, the Thrissur Zoo is located at about 2 km from the city centre, the zoo is more than just a place for showcasing the beautiful flora and fauna of the region. There is also a natural history museum and an art museum that have exhibits capturing the social and cultural heritage of Thrissur. With it being one of the two Zoological Parks in Kerala, the zoo experiences a good number of visitors every year. 
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

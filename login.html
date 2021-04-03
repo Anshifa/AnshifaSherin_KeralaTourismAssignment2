@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>
+        Login
+    </title>
+    <style>
+        .padd
+        {
+            padding-left: 70%;
+            padding-top: 10%;
+        }
+        .bg
+        {
+            background-image: url("login.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class = "bg">
+    <br><br><br>
+    <font color = "red" size = "20%">
+        <center>
+            Kerala Tourism
+        </center> 
+    </font>
+    <div class = "padd">
+        <input type="text" name = "id" placeholder="User ID" style = "height: 30; width: 130; border-radius: 2; font-family: LCALLIG; font-size: 100%" background-color: #33F451; required/>
+        <br><br>
+        <input type="password" name = "psd" placeholder="Password" style = "height: 30; width: 130; font-family: LCALLIG; font-size: 100%" background-color: #33F451; required />
+        <br><br>
+        <form action="main.html">
+            <input type="submit" value = "LOG IN" style = "height: 30; width: 60; font-family: impact; font-size: 100%; color: white; background-color: #33ffd7 ;">
+        </form>
+        <br><br>
+        <font color = "#000000">
+            Not a Member?
+            <a href="signup.html" style = "text-decoration: none; color: #5B2C6F; text-shadow: black;">Sign Up</a>
+        </font>
+    </div>
+</body>
+</html>

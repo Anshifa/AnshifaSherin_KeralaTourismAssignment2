@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <title>
+            Kannur
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .img
+            {
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                KANNUR
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                Cannanore
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="knr1.jpg" class="slide" width="500" height="300" />
+              <img src="knr2.jpg" class="slide" width="500" height="300" />
+              <img src="knr3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Kannur</strong>(formerly known in English as Cannanore and Portuguese as Cananor) is a city and a Municipal Corporation in North Malabar region, state of Kerala, India. It is the administrative headquarters of the Kannur District and situated 518 kilometres (322 mi) north of the state capital Thiruvananthapuram & 137 kilometres (85 mi) south of the major port city & a commercial hub, Mangalore. During British rule in India, when Kannur was a part of the Malabar District (Madras Presidency), the city was known as Cannanore. Kannur is the largest city of North Malabar region and 6th largest urban agglomeration in Kerala. As of 2011 census, Kannur corporation had population of 232,486.
+            <br>
+            Kannur has a good road network connecting to Mangalore, Bangalore, Mysore, Kodagu and Cochin. The railway station is also well connected to all parts of India. The Kannur International Airport which is about 30 kilometres from the city began operations on December 9 and is the fourth international airport in the state. Other nearby airports are at Calicut, Mysore and Mangalore. Kannur is on National Highway 66 or NH 66 (formerly National Highway 17) between Kozhikode and Mangalore. This highway is scheduled to be expanded to four lanes. A bypass for Kannur city is proposed under the NH widening project. Kannur is connected to Kodagu, Mysore and Bangalore in Karnataka by the Kannur-Coorg-Mysore Highway. This highway is upgraded to National Highway in 2017. Kannur railway station: Kannur railway station is one of the major stations of the Southern Railway zone, under the jurisdiction of the Palakkad. All trains including the Thiruvananthapuram Rajdhani Express and Kochuveli Garib Rath stop at Kannur. Six daily trains and around 15 weekly or bi-weekly trains connect Kannur to the capital Thiruvananthapuram. Kannur is well connected through rail with Mangalore and Kozhikode. Kannur South railway station and Edakkad railway stations are located under Kannur Corporation limits. Chirakkal railway station is located north of the city. Only passenger trains halt at these three stations. Kannur International Airport in Mattanur inaugurated on 9 December 2018. It is the fourth international airport in Kerala. The airport has a 4,000 metres (13,000 ft) runway (the longest in the State) and state of the art passenger terminal as well other amenities. It is well connected by a comprehensive network of roads and a proposal for railway line has also been mooted. In the 2016–17 Union Railway budget, ₹400 crore (US$56 million) were dedicated for under Extra Budgetary Resource (EBR) in which a part of the bill will be borne by the State Government towards the railway line.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>ST.ANGELO FORT</h2>
+                <br>
+                <img class="img" src="angelo.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    Considered as one of the most historic sites in Kannur, the St. Angelo Fort was constructed by the first Portuguese viceroy of India. The fort is triangular in shape appears as a massive yet magnificent structure standing at the helm of the ruthless sea. The laterite walls made of stone lend it an even more imposing air and it is a must-visit destination for architecture students. The sea wall segregating the fort from the sea provides breathtaking views of the Mopilla Bay. Visit the fort for taking a relaxing walk in the complex and enjoy stunning views of the Arabian Sea.
+                    <br>
+                    Distance: 2.0 km from Kannur bus stand.
+                    <br> Timings: 8 AM to 6 PM, every day
+                    <br> Entry fee: INR 10.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MUZHAPPILANGAD BEACH</h2>
+                <br>
+                <img class="img" src="muzhappilangad.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Famous as Kerala’s only drive-in beach, the Muzhappilangad offers some of the most stunning views of the yellow and orange sun setting along the golden sandy beaches of Malabar coast. 
+                    <br>
+                    The 4 km stretch of land running along the ocean is perfect for taking a romantic, leisurely stroll with your partner or just drive on the beach and soak in the naked natural splendour around. 
+                    <br> Photography enthusiasts can take breathtaking shots of the ocean and food lovers can munch on authentic Malabar snacks sold on the beach.
+                    <br>Distance: 13.8 km from Kannur bus stand.
+                    <br>Timings: No timing restrictions
+                    <br>Entry fee: There is no fee charged to enter the beach but if you want to drive a vehicle on the beach, you are charged INR 10.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>PALAKKAYAM THATTU</h2>
+                <br>
+                <img class="img" src="palakkayam.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    Palakkayam Thattu is one of the alluring places to visit in Kannur near the Western Ghats because of the verdant greenery and dizzying height of about 3350 feet above the sea level. It also happens to be one of the most visited hill stations in the state of Kerala. Populated by dense forests and several hillocks, the quaint hamlet is a favoured destination for avid trekkers.
+                    <br>Palakkayam Thattu is a natural paradise with astounding tranquillity and sereneness which is  perfect for long weekend destinations overlooking the lavish foliage from the top of the mountains. If you are looking for an escape from the everyday hustle and bustle of your life, then this Keralan hill-station is the right  place.
+                    <br>Location: Karuvanchal - Vellad, Chadikundu-Mavumchal, Palakkayam, Thattu, Kerala 670571.
+                    <br>Timings: 5:00 AM to 9:00 PM 
+                    <br>Entry Fee: INR 35 per adult 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KANNUR LIGHT HOUSE</h2>
+                <br>
+                <img class="img" src="kannurlighthouse.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Towering at the height of 75 feet, the lighthouse in Kannur is the first lighthouse to be constructed in Kerala. First built in 1903, the place has a history as well as cultural significance. The vantage point offers spectacular and awe-inspiring views of the entire district of Kannur, the vast expanse of the Arabian sea, and the Baby beach. 
+                    <br>
+                    The bewitching backdrop delights the viewer and the feeling the wind on your face at the highest point will leave you truly breathless. Tourists can also enjoy a leisurely walk in the well-maintained gardens and enjoy the mesmerizing water fountain show in the evenings.
+                    <br>
+                    Distance: 2.6 km from Kannur bus stand
+                    <br>
+                    Timings: 9 AM to 6 PM, every day
+                    <br>
+                    Entry fee: No entry fee. 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>PAYYAMBALAM BEACH</h2>
+                <br>
+                <img class="img" src="payyambalam.jpg" alt="" width="600" height="400"/>
+                <p>
+                    The Payyambalam Beach is considered as one of the unspoiled beaches in Kerala, adorned with golden sand and foamy white waters of the Arabian Sea. With its peaceful and inviting aura, the Payyambalam beach is an ideal destination for visitors to spend a long holiday.
+                    <br>
+                    You can literally unwind and rejuvenate yourself amidst the palm trees and casuarinas that make the shore more alluring by casting various shades of greenery. Being one of the most famous tourist places in Kannur, it lets you relish amazing nature walks, boating, swimming, and other thrilling adventure activities along with the 4 km long rhythmic dance of the turquoise waters of the sea.
+                    <br>
+                    Location: Payyambalam Beach Walkway, Payyambalam, Kannur, Kerala 670001
+                    <br>Timings: Open 24 hours all through the year.
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <title>
+            Kasaragod
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #8ebf42;
+                }
+                25% 
+                {
+                    background: #e6ebef;
+                }
+                50% 
+                {
+                    background: #1c87c9;
+                }
+                75% 
+                {
+                    background: #095484;
+                }
+                100% 
+                {
+                    background: #d0e2bc;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #8ebf42;
+                }
+                25% 
+                {
+                    background: #e6ebef;
+                }
+                50% 
+                {
+                    background: #1c87c9;
+                }
+                75%     
+                {
+                    background: #095484;
+                }
+                100%   
+                {
+                    background: #d0e2bc;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .img
+            {
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                KASARAGOD
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                Harkwillia
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="ksd1.jpg" class="slide" width="500" height="300" />
+              <img src="ksd2.jpg" class="slide" width="500" height="300" />
+              <img src="ksd3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Kasaragod</strong>is one of the 14 districts in the southern Indian state of Kerala. It is the northernmost district of Kerala and is included in North malabar region. It is also known as "Saptha Bhasha Sangama Bhoomi" (The land of seven languages), as seven languages namely Malayalam, Tulu, Kannada, Marathi, Konkani, Beary and Urdu are spoken unlike other districts of Kerala. It was a part of Kannur district of Kerala until 24th May 1984. The district is bounded by Dakshina Kannada district by north, Western ghats to North-East, Kodagu district in South-East, Kannur district to the south and Arabian sea to the west. This district has the maximum number of rivers in Kerala. 
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>RANIPURAM</h2>
+                <br>
+                <img class="img" src="ranipuram.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    Ranipuram is also known by its former name Madathumala, is a village and a major tourist attraction in the Kasaragod district of the Indian state of Kerala. Situated at 780 metres above mean sea level, Ranipuram is 48 km from the nearest city Kanhangad and 107 km from the major port city of Mangalore. 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>VALIYAPARAMBA COASTAL ISLAND</h2>
+                <br>
+                <img class="img" src="valiyaparamba.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Valiyaparamba is a coastal island in Hosdurg taluk, Kasaragod district, Kerala state, India.
+                    Valiyaparamba is seperated from the mainland by Kavvayi backwater. It is located five kilometers from Cheruvathoor and about 30 km from Bekal, North Kerala. The island is approximately 16.14 square kilometers in size and had a population of 11,917 in 1991. The island's main source of income is agriculture and fishing.
+                    The island island is seperated from the mainland is accessible by transport boat service or by crossing the Mavila Kadappuram bridge.
+                    <br>
+                    Nearest Railway station: Cheruvathoor, on the Kozhikode-Mangalore route, about 5km from Valiyaparamba. 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>BEKAL FORT</h2>
+                <br>
+                <img class="img" src="bekalfort.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    Bekal Fort was build by Shivappa nayaka of Keladi in 1650 AD, at Bekal. It is the largest fort in Kerala , spreading over 40 acres.
+                    India declared Bekal fort a special tourism area in 1992 and formed Bekal tourism devolopment corporation three years later to promote it. The song 'Uyire'(Tamil) from the movie Bombay was shot at Bekal Fort. Local roads connect to Mangalore in the north and Calicut in the south. The nearest railway station is Bekal Fort railway station, Kanhangad railway station and Kottikulam railway station on Mangalore-Palakkad line. There are airports at Mangalore, Kannur and Calicut.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MALIK DEENAR MOSQUE</h2>
+                <br>
+                <img class="img" src="malikdeenar.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Malik Deenar is one of the oldest mosques in India, situated in Kasaragod district in Kerala. The mosque, Juma masjid, which is one of the best kept and most attractive in the district, is located at Thalangara. Thalangara beach is on the western side of Kasaragod town and it is close to the railway station.
+                    The mosque contains the grave of Malik Deenar, one of the taabi'eens and the place is sacred to muslims. 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>CHANDRAGIRI FORT</h2>
+                <br>
+                <img class="img" src="chandragirifort.jpg" alt="" width="600" height="400"/>
+                <p>
+                    Chandragiri Fort is a fort built in the 17th century, situated in Kasaragod district of Kerala. This large squarish fort is 150 feet(46 m) above the sea level and occupies an area of about seven acres by the side of the river Payaswini. The fort is now in ruins. 
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

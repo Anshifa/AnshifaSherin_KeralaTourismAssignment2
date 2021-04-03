@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>
+            Kozhikode
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .img
+            {
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                KOZHIKODE
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                Calicut
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="kkd1.jpg" class="slide" width="500" height="300" />
+              <img src="kkd2.jpg" class="slide" width="500" height="300" />
+              <img src="kkd3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Kozhikode</strong>, also known as Calicut, is an Indian city, second-largest urban agglomeration in the State of Kerala in India and 19th largest in the country with a population of two million according to 2011 census. Kozhikode is classified as a Tier 2 city according to Government of India
+
+            During classical antiquity and the Middle Ages, Kozhikode was dubbed the City of Spices for its role as the major trading point of Indian spices. A historical city, it was the capital of an independent kingdom ruled by the Samoothiris (Zamorins) in the Middle Ages. According to data compiled by economics research firm Indicus Analytics in 2009 on residences, earnings and investments, Kozhikode ranked as the second best city in India to reside in.
+            <br>
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>KOZHIKODE BEACH</h2>
+                <br>
+                <img class="img" src="kkdbeach.jpg" alt="kkd1.jpg" width="600" height="400"/>
+                <p>
+                    Situated on the Malabar coast and endowed with natural beauty, Kozhikode beach should be a must in the itinerary of your visit to the city. This beach is renowned for the sunsets that tourists throng here to enjoy. Though the water is muddy and not suitable for swimming, still the stunning view of the Arabian Sea that the lighthouse offers more than compensates for the shortcoming. Payannakal, Putiyappa, Elathur, Beypore, all these beaches are part of the long stretch of Kozhikode beach. This beach lies on the western side of the city and is easily accessible through the four roads in the city. <br>Location: Malabar Coast. <br> Price: There is no fee to be paid to visit the beach.
+                    <br> Timing: The beach is open on all days to the tourists from 8 A.M. to 8 P.M. in the early hours visitors can see the real-life dolphin shows. <br> Best Time to Visit: September to May 
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MANANCHIRA</h2>
+                <br>
+                <img class="img" src="mananchira.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    Previously known as Mananchira Maidan, this place held many football matches. Mananchira scores high as one of the places to visit in Kozhikode. This place provides tranquility to the visitors which is much sought after as one wants to escape the chaotic city life. It is a beautiful park covered with lawns, traditional buildings, a musical fountain, and an open-air theatre. This park is built around a man-made lake known as Mananchira lake.
+                    <br> One must not forget to visit Mananchira or Mana Vikraman Tank which was the primary water source for the royal family and is maintained till date in its pristine beauty. Mananchira is the best place for an evening stroll or to enjoy a picnic with families and friends. This park is popular among tourists and locals because of its natural sculptures and natural beauty.
+                    <br> Location: In the heart of the Kozhikode city. <br> Price: There is no entry fee for this place. <br> Timing: Monday to Sunday 3:30 P.M. to 8 P.M. <br> Best Time to Visit: October to April
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KADALUNDI BIRD SANCTUARY</h2>
+                <br>
+                <img class="img" src="kadalundi.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    Kadalundi Bird Sanctuary is the perfect tourist spot for bird watchers and nature lovers. Just 19 km away from Kozhikode, this bird sanctuary is home to nearly 100 species of native birds and over 60 species of migratory birds. This is situated among the clusters of small islands on river Kadalundi. This is the habitat of gulls, terns, herons, and other alien birds which are a major attraction of this sanctuary.
+                    <br> Apart from the birds, the sanctuary is famous for its scenic beauty and holds a panoramic view of the river and the Arabian Sea. This sanctuary is also known for the various kinds of fishes, crabs, and mussels. Early morning hours are the best time to visit to watch the birds.
+                    <br> Location- Just 18 km from Kozhikode, the bird sanctuary is located at Malappuram, near Beypore.
+                    <br> Price: Entry fee Rs.25 per person
+                    <br> Timing: 8:00 AM to 6:00 PM
+                    <br> Best Time to Visit: December to April
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>BEYPORE BEACH</h2>
+                <br>
+                <img class="img" src="beyporebeach.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Situated near the mouth of Chaliyar river, Beypore beach is a famous tourist destination. Your visit to Kozhikode remains incomplete without a day spent at Beypore beach. There is never a dearth of activities once you are at the beach. Clearly, one of the favourite tourist places to visit in Kozhikode, this beach takes into a different world with its numerous fun-filled activities to keep you engaged as it offers abundant water activities like surfing, sunbathing, water skiing and swimming. <br> You can take in the vast expanse of rich golden sand, coconut trees that dot the coastline or the stone bridge known as Pulimoodu, which builds a pathway into the sea. There is never a dull moment at the beach and you can pamper yourself in a refreshing Ayurveda massage. <br> Location: Near the Chaliyar River. <br> Price: No Entry Fee
+                    <br> Timing: 24 hrs.
+                    <br> Best Time to Visit: October to March
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>THUSHARAGIRI FALL</h2>
+                <br>
+                <img class="img" src="thusharagiri.jpg" alt="" width="600" height="400"/>
+                <p>
+                    Enjoy the breathtaking beauty of Thusharagiri Fall when you pay a visit to Kozhikode.  Two streams originating from the Western Ghats meet at this point to create the Chalipuzzha River. The river further trifurcates to create three waterfalls and the free-falling water creates a mist, thus giving the name “Thusharagiri”. <br> This place has a lovely view all around and you get plenty of activities to indulge in. You may go for trekking, or enjoy rock-climbing. You can also take a break to visit the wildlife sanctuaries or sit on the banks of the river to enjoy the waterfalls. The lush green forest and cool water of the streams all around add to your enjoyment. A word of caution though, people with a faint heart should avoid the place because it is nature at its wildest best.  This is a place to awaken the nature lover and wildlife enthusiast in you. <br> Location: Kodenchery Village, Kozhikode. <br>Price: Rs.30 per person. <br> Timing: 8A:M:  to 5P:M. <br> Best Time to Visit: September to December 
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>

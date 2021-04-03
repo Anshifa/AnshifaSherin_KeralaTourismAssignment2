@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <title>
+            Eranakulam
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #4596cc;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            .img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                ERANAKULAM
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="elm1.jpg" class="slide" width="500" height="300" />
+              <img src="elm2.jpg" class="slide" width="500" height="300" />
+              <img src="elm3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Eranakulam</strong>, is a portion of the city of Kochi in central Kerala, India and has lent its name to the Ernakulam district. The Kerala High Court, the office of the Kochi Municipal Corporation and the Cochin Stock Exchange are situated here. Ernakulam is known as the commercial capital of Kerala. The Ernakulam Junction is a major railway station of the Indian Railways. Initially, Ernakulam was the headquarters of the Ernakulam District but was later shifted to Kakkanad. Ernakulam was once the capital of the Kingdom of Cochin. It is located 220 kilometres north - west of the state capital Thiruvananthapuram. The city has served as an incubator for many Malayali entrepreneurs and is a major financial and commercial hub of Kerala.
+            <br>
+            The main tourist attractions in Ernakulam are the Hill Palace Museum, Madhavan Nayar Foundation, Kaladi, Kodanad, Chendamangalam, Malayatoor, Bhoothathankettu and Thattekkad Bird Sanctuary. Being home to numerous temples and churches, Ernakulam is a favorite among domestic tourists visiting Kerala.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>MARINE DRIVE</h2>
+                <br>
+                <img class = "img" src="marinedrive.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    Marine drive is a quaint destination amongst the many Cochin tourist places the Kerala takes pride in. Exclusively built facing the backwaters, it offers a charming and a picturesque image especially during the evening hours attracting the locals and tourists alike. Along with the Rainbow bridge, which is a major draw for tourists, the Marine drive is lined with Shopping malls, fast food joints and other important landmark buildings of Kochi. Be ready to be allured by the gentle breeze while enjoying a walk down the promenade enjoying the company of your loved ones.                
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MATTANCHERY PALACE</h2>
+                <br>
+                <img class = "img" src="mattanchery.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    This Portuguese palace, also known as the Dutch Palace is one of the prime places to visit in Kochi due to its historic relevance. This quadrangular palace built in typical Kerala Nalukettu style has a courtyard in the centre where is seated the Pazhayannur Bhagavati' the goddess of Kochi royal family. The flooring of the palace is a sight to behold, as because it looks like polished black marble, but has been made the traditional Kerala way using burnt coconut shells, lime, charcoal, egg white etc giving a lasting finish. The reputation of the Palace is in the various murals painted in warm and rich colours the tempura style.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>ATHIRAPALLY WATERFALLS</h2>
+                <br>
+                <img class = "img" src="athirappally.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    At a height of 80m, this is the largest waterfall of Kerala and is often regarded as the“ Niagra of India”. The Athirapally Falls is a charming cascade of frothy waters emerging from the Anamudi mountains of the western ghats. The Athirapally gushes across the lush green forest of Vazhachal towards the Arabian sea creating an exquisite panoramic spectacle. On the way to Athirapally, one may also visit the theme parks Dreamworld and Silver storm and decide to stay over at the many resorts strategically located amidst the greenery.
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>SANTA CRUZ BASILICA</h2>
+                <br>
+                <img class = "img" src="santacruz.jpg" alt="" width="700" height="400"/>
+                <p>
+                    This is considered to be one of the 8 Basilicas in Kerala. It is also considered to be one of the most visited amongst Kochi tourist places as it is counted as one of the heritage edifices of Kerala constructed in gothic style with architectural grandeur. Built by the Portuguese, it was elevated by The Pope as a cathedral along with the erection of diocese in India. The main altar of the Church has been painted by the famous Italian Painter, Fr. Antonio Moscheni S.J. Beautiful stained glass painting enhances the beauty of the painting of the Last Supper. The exterior of the church is whitewashed in white with two lofty spires adorning the façade.
+
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>ANDHAKARANAZHI BEACH</h2>
+                <br>
+                <img class = "img" src="andhakaranazhi.jpg" alt="" width="600" height="400"/>
+                <p>
+                    This beach drawing several tourists is located in a coastal village, located 4km of Pattanakkad. The tall lighthouse in white and red grabs attention as it helps navigate the seamen at night. The Andhakaranazhi Beach happens to be a site for frequent shooting for Malayalam films, thus drawing more attention from the locals. Though seriously affected by the Tsunami in 2004, a brand new bridge and an aerial walkway have been constructed to the sea wall for a magnificent view of a dramatic sunset to cherish for a lifetime.
+                </p>
+            </li>
+            <br>
+        </ol>
+    </body>
+</html>

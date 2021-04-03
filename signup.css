@@ -1,0 +1,150 @@
+:root
+{
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+* 
+{
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', serif; 
+}
+body
+{
+  background-image: url("signup.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container
+{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+h2
+{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form
+{
+    padding: 30px 40px;
+    position: relative;
+}
+.form-control
+{
+    padding-bottom: 10px;
+    position: relative;
+}
+label
+{
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+input
+{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+input:focus
+{
+    outline: 0;
+    border-color: #777;
+}
+.form-control small
+{
+    font-size: 12px;
+    background: #fff;
+    color: var(--error-color);
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    visibility: hidden;
+}
+button
+{
+    cursor: pointer;
+    background: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form:after
+{
+    transform: skew(-10deg, -10deg);
+}
+.form-control.error small
+{
+    visibility: visible;
+}
+.form-control.error input
+{
+  border-color: var(--error-color);
+}
+.form-control.success input
+{
+  border-color: var(--success-color);
+}
+
+meter
+{
+    -webkit-appearance: none;
+    -moz-appearnace:none;
+    appearance: none;
+    margin: 0 auto 1em;
+    width: 100%;
+    height: 0.5em;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+meter::-webkit-meter-bar
+{
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+meter[value="1"]::-webkit-meter-optimum-value
+{
+    background: red;
+}
+meter[value="2"]::-webkit-meter-optimum-value
+{
+    background: orange;
+}
+meter[value="3"]::-webkit-meter-optimum-value
+{
+    background: yellow;
+}
+meter[value="4"]::-webkit-meter-optimum-value
+{
+    background: green;
+}
+meter[value="1"]::-moz-meter-bar
+{
+    background: red;
+}
+meter[value="2"]::-moz-meter-bar
+{
+    background: orange;
+}
+meter[value="3"]::-moz-meter-bar
+{
+    background: yellow;
+}
+meter[value="4"]::-moz-meter-bar
+{
+    background: green;
+}

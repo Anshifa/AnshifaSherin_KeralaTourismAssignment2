@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>
+            Alappuzha
+        </title>
+        <style>
+            .slider
+            {
+                width: 500px;
+                height: 300px;
+                background-color: yellow;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+            .image-container
+            {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                -webkit-transition: left 2s;
+                -moz-transition: left 2s;
+                -o-transition: left 2s;
+                transition: left 2s;
+            }
+            .slide
+            {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            #slide-1:target ~ .image-container 
+            {
+                left: 0px;
+            }
+            #slide-2:target ~ .image-container 
+            {
+                left: -500px;
+            }
+            #slide-3:target ~ .image-container 
+            {
+                left: -1000px;
+            }
+            .buttons 
+            {
+                position: relative;
+                top: -20px;
+            }
+            .buttons a 
+            {
+                display: inline-block;
+                height: 15px;
+                width: 15px;
+                border-radius: 50px;
+                background-color: lightgreen;
+            }
+            h1
+            {
+                color: whitesmoke;
+            }
+            .bg
+            {
+                -webkit-animation: colorchange 20s infinite;
+                animation: colorchange 20s infinite;
+            }
+            @-webkit-keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #a5ee69;
+                }
+                75% 
+                {
+                    background: teal;
+                }
+                100% 
+                {
+                    background: #f59275;
+                }
+            }
+            @keyframes colorchange 
+            {
+                0% 
+                {
+                    background: #ff75ae;
+                }
+                25% 
+                {
+                    background: #95ccf8;
+                }
+                50% 
+                {
+                    background: #a5ee69;
+                }
+                75%     
+                {
+                    background: teal;
+                }
+                100%   
+                {
+                    background: #f59275;
+                }
+            }
+            .p1
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            ol
+            {
+                padding-left: 20%;
+                padding-right: 10%;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a
+            {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 21px;
+            }
+            topnav a:hover
+            {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active
+            {
+                background-color: #11444d;
+                color: white;
+            }
+            .right
+            {
+                float: right;
+            }
+            .img
+            {
+                padding-left: 10%;
+                padding-right: 10%;
+                border: 2px solid #fff;
+                -moz-box-shadow: 10px 10px 5px #ccc;
+                -webkit-box-shadow: 10px 10px 5px #ccc;
+                box-shadow: 10px 10px 5px #ccc;
+                -moz-border-radius: 25px;
+                -webkit-border-radius: 25px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body class = bg>
+        <font color = "#1c2833" size = "20%">
+            <center style="text-decoration: bold;">
+                ALAPPUZHA
+            </center>
+        </font>
+        <h1 class = "h1">
+            <center>
+                
+            </center>
+        </h1>
+        <div class = "topnav">
+            <a class = "active" href="main.html">HOME</a>
+            <center>
+                <a href="district.html">DISTRICTS</a>
+            </center>
+            <a class = "right" href="">Contact Details</a>
+        </div>
+        <br><br>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="alp1.jpg" class="slide" width="500" height="300" />
+              <img src="alp2.jpg" class="slide" width="500" height="300" />
+              <img src="alp3.jpg" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+        </div>
+        <br><br>
+        <p class = "p1">
+            <strong>Alappuzha</strong>, also known by its former name Alleppey, is the administrative headquarters of Alappuzha District in the Indian State of Kerala. Alappuzha is a city and a municipality in Kerala with an urban population of 174,164 and ranks third among the districts in literacy rate in the State of Kerala. In 2016, the Centre for Science and Environment rated Alappuzha as the cleanest town in India. Alappuzha is considered to be the oldest planned city in this region and the lighthouse built on the coast of the city is the first of its kind along the Laccadive Sea coast.
+            <br>
+            Situated on the south-western coast of India, Alappuzha is also known by its anglicized name Alleppey. Gifted with immense natural beauty, Alappuzha’s backwaters have been the mainstay of Kerala ’s tourism. Alappuzha port used to be one of the busiest trade centers and traded with the Persian Gulf regions and even Europe.
+        </p>
+        <br><br>
+        <h1>
+            <center>
+                HOT TOURIST SPOTS
+            </center>
+        </h1>
+        <ol>
+            <li>
+                <h2>KAYAMKULAM LAKE</h2>
+                <br>
+                <img class = "img" src="kayamkulam.jpg" alt="ranipuram" width="600" height="400"/>
+                <p>
+                    Kayamkulam Lake used to be a lake before the authorities decided to break the bar separating it from the Arabian Sea to build a fishing harbor. As a result, it is now a lagoon. It is a place full of activities including fishing, races or other touristic activities. The aquatic life in this lagoon is very viable commercially, hence the popularity of the spot as a fishing ground. Alongside the fish, many birds also make themselves at home in the environs surrounding the waterbody. Expect a variety of activity zones here. You can use the Cycling Track or Recreation Room or lunch on the floating restaurant or pay a visit to the Tsunami Museum or the Adventure zone. The list of activities also includes visiting Boardwalk, View Point, Landscaping, Yard lighting, Houseboat Jetty and a waterway for boats, in short, everything is available here. A famous boat racing competition by the name of Kayamkulam Boat Race takes place here as well. To view the wide expanse of ceaseless waves crashing on top of each other, will give you the experience to remember forever.                
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>VEMBANAD LAKE</h2>
+                <br>
+                <img class = "img" src="vembanad.jpg" alt="" width = "600" height="400"/>
+                <p>
+                    This is one of the most beautiful Alappuzha tourist places that you absolutely cannot miss. Vembanad Lake is Kerala’s longest lake and is also among the largest in India. Several canals empty their water into the lake at several points along its wide expanse. Since it is a long lake, it covers many districts of Kerala and goes by different names in each district like Punnamada Lake in Kuttanad, Kochi Lake in Kochi. Many small islands dot its length. Boating in this lake is a part of backwater trip in Kerala. The Kumarakom Tourist Village offers houseboat cruises and holiday packages which you can take advantage of and so have the best possible backwater boating experience on your trip. The lake is full of exciting possibilities- just imagine yourself floating on the lake early in the morning, sipping a hot cup of coffee and listening to the gentle lapping of the waves and chirping of birds. Now that is peace and happiness! If you get a chance to go to this place during August, you will be in luck. The Annual Snake Boat Race or Vallam Kali takes place at this time and is a major attraction. The sight is amazing, to say the least. Do plan a houseboat trip on the lake while planning your Kerala itinerary.
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>MARARI BEACH</h2>
+                <br>
+                <img class = "img" src="marari.jpg" alt="" width= "600" height="400"/>
+                <p>
+                    If you want to unwind completely, then the Marari Beach is a must-visit destination for you. The sleepy little village located close to Marari Beach is what makes this beach distinct and attractive, inviting people from all over the world to learn and understand the culture of the Indian state of Kerala. This beautiful destination is known for being a beach symphony, thanks to its glistening sands and crystal clear waters. Watching sunrise and sunset here is quite a romantic experience that couples would love to enjoy. The place is rated as one of the World’s Top five Hammock Beaches by the National Geographic Survey. Marari Beach is known for providing unique experiences to travelers. Taking them away from modern life, this beach gives them an opportunity to unwind and to enjoy the different facets and bounties of life and nature. The village by the sea is one of the best places to visit in Alleppey where one can go to learn more about the culture and heritage of Kerala.
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>ALAPPUHA LIGHT HOUSE</h2>
+                <br>
+                <img class = "img" src="alappeylighthouse.jpg" alt="" width="700" height="400"/>
+                <p>
+                    Famous as the Alappuzha lighthouse,  the Alleppey lighthouse can be spotted from miles away. A humongous tower celebrating the solitude by the coastal strip wearing strips of red and white is how it is best reminisced. The phenomenal tower was first installed in March 1862, almost 148 years ago. Located at around 4 kilometers ahead of the Alappuzha town, Alleppey or Alappuzha lighthouse grants a panoramic 360-degree view of the ocean as well as the territorial land of Alleppey which is majorly thick and lush foliage. Flaunting its badge of being one of the oldest lighthouses of Kerala, its construction dates back to the time when Marthanda Varma- II Maharaja owned the throne of the region.
+
+
+                </p>
+            </li>
+            <br>
+            <li>
+                <h2>KUTTANAD BACKWATERS</h2>
+                <br>
+                <img class = "img" src="kuttanad.jpg" alt="" width="600" height="400"/>
+                <p>
+                    One of the best places to visit in Alleppey is Kuttanad Backwaters. This isn’t a place, it’s a phenomenon. It is a spectacular lagoon, surrounded by the beauty of lakes, rivers, canals, misty mountains and ethereal landscapes. The experience of floating along the pristine backwaters on a houseboat is inexplicable. You will have to live it to know it! The place is also known as the ‘Rice bowl of Kerala,’ for its stunning rice plantations. If you are in Alleppey for a day, then this place should be your entire itinerary.
+                </p>
+            </li>
+            <br>
+        </ol>
+    </body>
+</html>
